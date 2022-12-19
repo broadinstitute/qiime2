@@ -16,6 +16,6 @@ RUN conda create -n $CONDA_DEFAULT_ENV python=3.8
 RUN echo "source activate $CONDA_DEFAULT_ENV" > ~/.bashrc
 RUN hash -r
 COPY requirements-conda.txt /opt
-RUN mamba install -y -p "$MINICONDA_PATH/envs/$CONDA_DEFAULT_ENV" /opt/requirements-conda.txt
+RUN mamba install -y -p "$MINICONDA_PATH/envs/$CONDA_DEFAULT_ENV" --file /opt/requirements-conda.txt
 
 CMD ["/bin/bash"]
