@@ -12,7 +12,7 @@ ENV \
 # Set it up so that this slow & heavy build layer is cached
 # unless the requirements* files or the install scripts actually change
 WORKDIR /opt
-RUN conda create -n $CONDA_DEFAULT_ENV python=3.9
+RUN conda create -n $CONDA_DEFAULT_ENV python=3.8
 RUN echo "source activate $CONDA_DEFAULT_ENV" > ~/.bashrc
 RUN hash -r
 COPY requirements-conda.txt /opt
