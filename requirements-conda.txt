@@ -1,7 +1,7 @@
 #q2-alignment=2022.8.0
 q2-composition=2022.8.0
 q2-cutadapt=2022.8.0
-#q2-dada2=2022.8.0
+q2-dada2=2022.8.0
 q2-deblur=2022.8.0
 q2-demux=2022.8.0
 #q2-diversity=2022.8.0
